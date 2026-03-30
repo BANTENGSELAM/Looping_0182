@@ -60,3 +60,23 @@ int main(){
 
     cout<<"Status Kelulusan = "<<status<<" , dengan nilai rata-rata = "<<rerata<<endl;
 }
+
+//Logika OR
+int main(){
+    float nilB,nilM,rerata;
+    string status;
+
+    cout<<"Masukkan Nilai Matematika = ";
+    cin >>nilM;
+    cout<<"Masukkan Nilai Bahasa Inggris = ";
+    cin >>nilB;
+
+    rerata = (nilB+nilM)/2;
+
+    if ((rerata >= 60 ) || (nilM >= 70))
+        status = "Lulus";
+    else
+        status = "Tidak lulus";
+        
+    cout<<"Status Kelulusan = "<<status<<" ,dengan nilai rata-rata = "<<rerata<<endl;
+}
