@@ -40,3 +40,23 @@ int main(){
     cout<<"Bilangan acak do-while yang terakhur ="<<x <<endl;
     cout<<endl;
 }
+
+//Logika not
+int main(){
+    float nilB,nilM,rerata;
+    string status;
+
+    cout<<"Masukkan Nilai Matematika = ";
+    cin >>nilM;
+    cout<<"Masukkan Nilai Bahasa Inggris = ";
+    cin >>nilB;
+
+    rerata = (nilB+nilM)/2;
+
+    if (!(rerata < 60) )
+        status = "Lulus";
+    else
+        status = "Tidak Lulus";
+
+    cout<<"Status Kelulusan = "<<status<<" , dengan nilai rata-rata = "<<rerata<<endl;
+}
